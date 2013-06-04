@@ -168,7 +168,7 @@ function apply_image_effect(cv, fn)
 	
 }
 
-function onload()
+function init()
 {
 	var canvas, ctx, imgObj;
 	
@@ -179,12 +179,12 @@ function onload()
 	
     imgObj.onload = function ()
 	{
-		canvas.style.width = this.width + "px";
-		canvas.style.height = this.height + "px";
+		canvas.style.width = (this.width / this.height * 350) + "px";
+		canvas.style.height = 350 + "px";
         ctx.drawImage(this, 0, 0, this.width, this.height, 0, 0, canvas.width, canvas.height);
     }
 	
-    imgObj.src = '5.jpg';
+    imgObj.src = 'img/test.jpg';
 }
 
 

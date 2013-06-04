@@ -45,24 +45,21 @@
 		td, tr{border: none;}
 		th{border: none; font-weight: 500;}
 		h3{font-weight: 400;}
+		ul{list-style: none; padding: 0; margin: 10px 0 0 0;}
+		li{padding: 0; margin: 0; cursor: pointer;}
+		li:hover{background: #47b6e8;}
 
 		.content
 		{
 			margin-top: 100px;
-			position: absolute;
-			background: black;
-		}
-
-		.content,
-		.content + * {
-			display: inline-block;
-			vertical-align: middle;
+			position:absolute; top:0; bottom:0; left:0; right:0;
+			margin:auto; height:350px; width:50%;
 		}
 
 		.content-img
 		{
 			float: left;
-			background: #000000;
+			background: #ffffff;
 		}
 
 		.content-toolbar
@@ -72,6 +69,8 @@
 			color: #ffffff;
 			float: left;
 			height: 350px;
+			font-size: 20px;
+			line-height: 40px;
 		}
 
 
@@ -87,13 +86,13 @@
 		</div>
 		<div class='content-toolbar'>
 			<ul>
-				<li>A</li>
-				<li>B</li>
-				<li>C</li>
-				<li>D</li>
-				<li>E</li>
-				<li>F</li>
-				<li>G</li>
+				<li onclick="image_fxpreset_cinemascope('source');">A</li>
+				<li onclick="image_fxpreset_retro('source');">B</li>
+				<li onclick="image_fxpreset_bnw('source');">C</li>
+				<li onclick="image_fxpreset_focus('source');">D</li>
+				<li onclick="image_fxpreset_focus('source');">E</li>
+				<li onclick="image_fxpreset_focus('source');">F</li>
+				<li onclick="image_fxpreset_focus('source');">G</li>
 			</ul>
 		</div>
 		<div style='clear:both'></div>
