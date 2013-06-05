@@ -1,3 +1,17 @@
+/*
+
+	imagefx - javascript image effects library
+
+	Usage:
+
+	image_fxpreset_bnw('source');
+
+	or in HTML
+
+	<canvas id="source" width="520" height="350" onclick="image_fxpreset_focus('source');"></canvas>
+
+	There's no initialization required. 
+*/
 
 var canvas, ctx;
 var imgObj;
@@ -241,21 +255,6 @@ function image_fxpreset_focus(canvas_id)
 	apply_image_effect(canvas, 'center_blur');
 	image_effect_vignette(ctx, canvas.width, canvas.height, 0.3);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
